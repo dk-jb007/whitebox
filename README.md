@@ -71,7 +71,16 @@ In case of IOS-XR Selection from GRUBavailable during boot process
 
 ONIE:/ # onie-stop (to stop autodiscovery of image installation)
 
+### Different Components of NOS (Network Operating System)
 
+A base Operating System
+A set of hardware monitoring application
+A switching Routing Stack
+A Hardware Abstraction Layer
+A Routing Information Database
+A switching information Database
+A set of routing switching protocol applications
+A set of management applications
 
 
 
