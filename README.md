@@ -31,7 +31,50 @@ Yes, IOS-XR7 runs on severalcertified whiteboxes;the Edgecore AS-5916 and AS-781
 3. Python, REST
 4. DEVNET, Netconf, Restconf, Yang, NSO
 
+### Cisco Solutions: 
+* Intergrated solution (NCS5500, Spitfire) (usual install, upgrades)
+* Disaggregated Solution (3rd party HW) (ONIE is used for image discovery and installation)
+
+### ONIE (Network OS Install Environment) [ref](https://www.onie.org/)
+* Provides an environment for network OS installater and execution
+* like a pre-installed kickstater
+* Implemented using a modern linux kernal and busybox
+
+### ONIE - Intro
+
+* When an ONIE-enabled network switch boots for the first time, theboot loader launches the kernel, which starts the **ONIE discovery and execution (ODE)** application
+* The ODE uses a number of methods (like local files, DHCP, IPv6neighbors, mDNS/DNS-SD) to locate and download (via HTTP orTFTP) an operating system installer.
+* Once the installer is found, the ODE executes the installer, which thenproceeds to provision the machine in an NOS-specific way.
+
+
+**The initial ONIE GRUB menu looks like this:**
+
+
+
+#### The first time the switch boots the following steps happen:
+* The boot loader launches the default OS, which is the ONIE kernel.
+* The ODE locates an NOS installer.
+* The ODE executes the NOS installer
+* The NOS installer installs the OS.
+* The NOS installer marks the boot environment to boot straight into the NOS
+* The system reboots
+
+#### On Subsequent boots:
+the system boots straight into the installed NOS, bypassing the ONIE kernel and ODE application. 
+The start upsequence for subsequent boots is:
+* The boot loader launches the default OS, whichis the NOS
+* The NOS boots and executes
+
+In case of IOS-XR Selection from GRUBavailable during boot process
+
+### ONIE CLI: 
+
+ONIE:/ # onie-stop (to stop autodiscovery of image installation)
 
 
 
 
+
+
+++++++++++++++++++
+NOTE: Document how to install XR with ONIE through DHCP (and have the 2 entries on the DHCP server for ONIE and XR ZTP) ?
