@@ -30,5 +30,5 @@
   
 
 Access: 
-https://calo-new.cisco.com/#/tools/search_devices/view_device_details/298900_2
-https://calo-new.cisco.com/#/tools/search_devices/view_device_details/327562_2
+* https://calo-new.cisco.com/#/tools/search_devices/view_device_details/298900_2
+* https://calo-new.cisco.com/#/tools/search_devices/view_device_details/327562_2
