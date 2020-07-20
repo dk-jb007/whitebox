@@ -84,6 +84,8 @@ ONIE:/ # onie-stop (to stop autodiscovery of image installation)
 
 ![NOS_Component](Images/NOS.png)
 
+### Installation of NOS (XR) on whitebox - Edgecore
+[Install XR on whitebox](https://techzone.cisco.com/t5/Whitebox-and-IOS-XR/Installing-XR-on-Whitebox-EdgeCore-7816/ta-p/1233440)
 
 ++++++++++++++++++
 NOTE: Document how to install XR with ONIE through DHCP (and have the 2 entries on the DHCP server for ONIE and XR ZTP) ?
