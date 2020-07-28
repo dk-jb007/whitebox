@@ -89,3 +89,5 @@ ONIE:/ # onie-stop (to stop autodiscovery of image installation)
 
 ++++++++++++++++++
 NOTE: Document how to install XR with ONIE through DHCP (and have the 2 entries on the DHCP server for ONIE and XR ZTP) ?
+
+Case; 689580806
